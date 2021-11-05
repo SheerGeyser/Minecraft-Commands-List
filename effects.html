@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Effects</title>
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAA2ml4ANUxrAC5wSAA6dlgAN05uABYfLQAXITAAM3ROABQdKwA9oWQAIjFFAESnbAAeODoAUKp8ACAvQwAXIi4AMTM3AEKebQArP1gAIUE6ACg7UwA0mVsAJTdOACxBWwAYIjcAGSU3ACAvRAAtQ14ALpBUACdtQwAQFyUAHSs/ABEaJQAfLj8AVK+AADyFWgAfLUIANEtpAC1rSQAhM0oAFUAmAEaqbgA4m18AIzVNABsoOAAiMkUAOlN0ABgkMwAdSS4AO6BiABMcKQAjZz0AEyMmADlRcgAYIjEAJTZLADmbYAA3lFsASalyACMyRgAvRmAAZL6RACt6SgBfuowAHCwuAE9SVgAylVkAJzpRAB9gOQAXPSgAK0BZAEOmawBYuIIAFjQpACY4TwAiTDgAQaRpAEancQAhMEUA////ADNKZwAxRmIAVrOBACQsOAA9nWUAXLaJADNAUgA0PkcASaRyABomOQAfLT4AOZxgACEzRgAcKTkAHlg5AEqtcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT09PT09PT04sT09PT09PT09PT09PFko8LAoZT09PT09PT09WN1AWUQUvBQ8sT09PTysEN0NDGkEhWlwvLC8GT08SK1FXAS5dGQYPUywGWk9PDiVKFlErFDYWJDY7MlNPTzwrF0YuJx8vWgYsWjcQT08WNStZGCcTQAhaIC0vMk9PHxsXSwNLMzBLIDQeNi9PTysaDF4HPjo/M0lFSw8gT09TJksjSFU5OVRbJktJSU9PAh0/KhEJOUcJC0dMRChPT01VHFJHDSIJCUI6ADEVT09PT184PQkAUgApUglPT09PT09PTwkxEQBYW09PT09PT09PT09PTwspT09PT09PT/5/AAD4HwAA4AcAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAADgBwAA+B8AAP5/AAA="
+        rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+</head>
+
+<body>
+    <div class="col-sm">
+        <a href="./index.html" style="position: fixed;
+        z-index: 1000;     bottom: 0;"><button type="button" class="btn btn-primary">Назад</button></a>
+        <br>
+        <div>
+            <h3 style="padding: 0 1rem;">Комманды эффектов</h3>
+            <p style="padding: 0 1rem;">Чтобы скопировать комманду, дважды нажмите на понравившуюся</p>
+            <p style="padding: 0 1rem;">Для указания уровня эффекта нужно писать цифру от 1 до 3</p>
+            <p style="padding: 0 1rem;">К примеру: <b>!Speed 3</b></p>
+        </div>
+        <br>
+        <ol class="list-group list-group-numbered">
+            <li onclick="Copy(1)" id='#1' data-clipboard-text="!Absorption" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Absorption</div>
+                    Поглощение
+                </div>
+            </li>
+            <li onclick="Copy(2)" id='#2' data-clipboard-text="!Bad_Luck" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Bad_Luck</div>
+                    Невезение
+                </div>
+            </li>
+            <li onclick="Copy(3)" id='#3' data-clipboard-text="!Bad_Omen" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Bad_Omen</div>
+                    Дурное
+                </div>
+            </li>
+            <li onclick="Copy(4)" id='#4' data-clipboard-text="!Blindness" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Blindness</div>
+                    Слепота
+                </div>
+            </li>
+            <li onclick="Copy(5)" id='#5' data-clipboard-text="!Conduit_Power" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Conduit_Power</div>
+                    Сила
+                </div>
+            </li>
+            <li onclick="Copy(6)" id='#6' data-clipboard-text="!Dolphin_Grace" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Dolphin_Grace</div>
+                    Дельфинья грация
+                </div>
+            </li>
+            <li onclick="Copy(7)" id='#7' data-clipboard-text="!Fire_Resistance" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Fire_Resistance</div>
+                    Огнестойкость
+                </div>
+            </li>
+            <li onclick="Copy(8)" id='#8' data-clipboard-text="!Glowing" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Glowing</div>
+                    Свечение
+                </div>
+            </li>
+            <li onclick="Copy(9)" id='#9' data-clipboard-text="!Haste" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Haste</div>
+                    Спешка
+                </div>
+            </li>
+            <li onclick="Copy(10)" id='#10' data-clipboard-text="!Health_Boost" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Health_Boost</div>
+                    Здоровье
+                </div>
+            </li>
+            <li onclick="Copy(11)" id='#11' data-clipboard-text="!Hero_Village" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Hero_Village</div>
+                    Герой Деревни
+                </div>
+            </li>
+            <li onclick="Copy(12)" id='#12' data-clipboard-text="!Hunger" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Hunger</div>
+                    Голод
+                </div>
+            </li>
+            <li onclick="Copy(13)" id='#13' data-clipboard-text="!Instant_Damage" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Instant_Damage</div>
+                    Урон
+                </div>
+            </li>
+            <li onclick="Copy(14)" id='#14' data-clipboard-text="!Instant_Health" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Instant_Health</div>
+                    Моментальное исцеление
+                </div>
+            </li>
+            <li onclick="Copy(15)" id='#15' data-clipboard-text="!Invisibility" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Invisibility</div>
+                    Невидимость
+                </div>
+            </li>
+            <li onclick="Copy(16)" id='#16' data-clipboard-text="!Jump_Boost" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Jump_Boost</div>
+                    Прыгучесть
+                </div>
+            </li>
+            <li onclick="Copy(17)" id='#17' data-clipboard-text="!Levitation" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Levitation</div>
+                    Левитация
+                </div>
+            </li>
+            <li onclick="Copy(18)" id='#18' data-clipboard-text="!Luck" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Luck</div>
+                    Удача
+                </div>
+            </li>
+            <li onclick="Copy(19)" id='#19' data-clipboard-text="!Mining_Fatigue" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Mining_Fatigue</div>
+                    Шахтерская усталось
+                </div>
+            </li>
+            <li onclick="Copy(20)" id='#20' data-clipboard-text="!Nausea" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Nausea</div>
+                    Тошнота
+                </div>
+            </li>
+            <li onclick="Copy(21)" id='#21' data-clipboard-text="!Night_Vision" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Night_Vision</div>
+                    Ночное зрение
+                </div>
+            </li>
+            <li onclick="Copy(22)" id='#22' data-clipboard-text="!Poison" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Poison</div>
+                    Отравление
+                </div>
+            </li>
+            <li onclick="Copy(23)" id='#23' data-clipboard-text="!Regeneration" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Regeneration</div>
+                    Регенерация
+                </div>
+            </li>
+            <li onclick="Copy(24)" id='#24' data-clipboard-text="!Resistance" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Resistance</div>
+                    Сопротивление
+                </div>
+            </li>
+            <li onclick="Copy(25)" id='#25' data-clipboard-text="!Saturation" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Saturation</div>
+                    Сытость
+                </div>
+            </li>
+            <li onclick="Copy(26)" id='#26' data-clipboard-text="!Slow_Falling" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Slow_Falling</div>
+                    Замед. Падение
+                </div>
+            </li>
+            <li onclick="Copy(27)" id='#27' data-clipboard-text="!Slowness" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Slowness</div>
+                    Замедление
+                </div>
+            </li>
+            <li onclick="Copy(28)" id='#28' data-clipboard-text="!Speed" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Speed</div>
+                    Скорость
+                </div>
+            </li>
+            <li onclick="Copy(29)" id='#29' data-clipboard-text="!Strength" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Strength</div>
+                    Сила
+                </div>
+            </li>
+            <li onclick="Copy(30)" id='#30' data-clipboard-text="!Water_Breathing" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Water_Breathing</div>
+                    Подводное дыхание
+                </div>
+            </li>
+            <li onclick="Copy(31)" id='#31' data-clipboard-text="!Weakness" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Weakness</div>
+                    Слабость
+                </div>
+            </li>
+            <li onclick="Copy(32)" id='#32' data-clipboard-text="!Wither" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold effects">!Wither</div>
+                    Иссушение
+                </div>
+            </li>
+        </ol>
+        <br>
+    </div>
+
+    <script>
+        function Copy(number) {
+            /* Get the text field */
+            var element = document.getElementById(`#${number}`)
+
+            var clipboard = new ClipboardJS(element);
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

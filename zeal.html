@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Zeal</title>
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAA2ml4ANUxrAC5wSAA6dlgAN05uABYfLQAXITAAM3ROABQdKwA9oWQAIjFFAESnbAAeODoAUKp8ACAvQwAXIi4AMTM3AEKebQArP1gAIUE6ACg7UwA0mVsAJTdOACxBWwAYIjcAGSU3ACAvRAAtQ14ALpBUACdtQwAQFyUAHSs/ABEaJQAfLj8AVK+AADyFWgAfLUIANEtpAC1rSQAhM0oAFUAmAEaqbgA4m18AIzVNABsoOAAiMkUAOlN0ABgkMwAdSS4AO6BiABMcKQAjZz0AEyMmADlRcgAYIjEAJTZLADmbYAA3lFsASalyACMyRgAvRmAAZL6RACt6SgBfuowAHCwuAE9SVgAylVkAJzpRAB9gOQAXPSgAK0BZAEOmawBYuIIAFjQpACY4TwAiTDgAQaRpAEancQAhMEUA////ADNKZwAxRmIAVrOBACQsOAA9nWUAXLaJADNAUgA0PkcASaRyABomOQAfLT4AOZxgACEzRgAcKTkAHlg5AEqtcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT09PT09PT04sT09PT09PT09PT09PFko8LAoZT09PT09PT09WN1AWUQUvBQ8sT09PTysEN0NDGkEhWlwvLC8GT08SK1FXAS5dGQYPUywGWk9PDiVKFlErFDYWJDY7MlNPTzwrF0YuJx8vWgYsWjcQT08WNStZGCcTQAhaIC0vMk9PHxsXSwNLMzBLIDQeNi9PTysaDF4HPjo/M0lFSw8gT09TJksjSFU5OVRbJktJSU9PAh0/KhEJOUcJC0dMRChPT01VHFJHDSIJCUI6ADEVT09PT184PQkAUgApUglPT09PT09PTwkxEQBYW09PT09PT09PT09PTwspT09PT09PT/5/AAD4HwAA4AcAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAADgBwAA+B8AAP5/AAA="
+        rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+</head>
+
+<body>
+    <div class="col-sm">
+        <a href="./index.html" style="position: fixed;
+        z-index: 1000;     bottom: 0;"><button type="button" class="btn btn-primary">Назад</button></a>
+        <br>
+        <div>
+            <h3 style="padding: 0.5rem 1rem;">Кастомные комманды</h3>
+            <p style="padding: 0 1rem;">Чтобы скопировать комманду, дважды нажмите на понравившуюся</p>
+        </div>
+        <br>
+        <ol class="list-group list-group-numbered">
+            <li onclick="Copy(1)" id='#1' data-clipboard-text="!ghast_tear" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!ghast_tear</div>
+                    Слеза гаста
+                </div>
+            </li>
+            <li onclick="Copy(2)" id='#2' data-clipboard-text="!glass_bottle" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!glass_bottle</div>
+                    Бутылочка
+                </div>
+            </li>
+            <li onclick="Copy(3)" id='#3' data-clipboard-text="!fermented_spider_eye" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!fermented_spider_eye</div>
+                    Маринованный паучий глаз
+                </div>
+            </li>
+            <li onclick="Copy(4)" id='#4' data-clipboard-text="!blaze_powder" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!blaze_powder</div>
+                    Огненный порошок
+                </div>
+            </li>
+            <li onclick="Copy(5)" id='#5' data-clipboard-text="!magma_cream" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!magma_cream</div>
+                    Сгусток магмы
+                </div>
+            </li>
+            <li onclick="Copy(6)" id='#6' data-clipboard-text="!brewing_stand" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!brewing_stand</div>
+                    Зельеварка
+                </div>
+            </li>
+            <li onclick="Copy(7)" id='#7' data-clipboard-text="!cauldron" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!cauldron</div>
+                    Котёл
+                </div>
+            </li>
+            <li onclick="Copy(8)" id='#8' data-clipboard-text="!glistering_melon_slice" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!glistering_melon_slice</div>
+                    Сверкающий ломтик арбуза
+                </div>
+            </li>
+            <li onclick="Copy(9)" id='#9' data-clipboard-text="!golden_carrot" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!golden_carrot</div>
+                    Золотая морковь
+                </div>
+            </li>
+            <li onclick="Copy(10)" id='#10' data-clipboard-text="!rabbit_foot" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!rabbit_foot</div>
+                    Кроличья лапка
+                </div>
+            </li>
+            <li onclick="Copy(11)" id='#11' data-clipboard-text="!dragon_breath" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!dragon_breath</div>
+                    Драконье дыхание
+                </div>
+            </li>
+            <li onclick="Copy(12)" id='#12' data-clipboard-text="!phantom_membrane" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!phantom_membrane</div>
+                    Мембрана фантома
+                </div>
+            </li>
+        </ol>
+        <br>
+    </div>
+
+    <script>
+        function Copy(number) {
+            /* Get the text field */
+            var element = document.getElementById(`#${number}`)
+
+            var clipboard = new ClipboardJS(element);
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

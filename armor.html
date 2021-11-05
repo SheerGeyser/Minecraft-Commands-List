@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Weapon and Armor</title>
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAA2ml4ANUxrAC5wSAA6dlgAN05uABYfLQAXITAAM3ROABQdKwA9oWQAIjFFAESnbAAeODoAUKp8ACAvQwAXIi4AMTM3AEKebQArP1gAIUE6ACg7UwA0mVsAJTdOACxBWwAYIjcAGSU3ACAvRAAtQ14ALpBUACdtQwAQFyUAHSs/ABEaJQAfLj8AVK+AADyFWgAfLUIANEtpAC1rSQAhM0oAFUAmAEaqbgA4m18AIzVNABsoOAAiMkUAOlN0ABgkMwAdSS4AO6BiABMcKQAjZz0AEyMmADlRcgAYIjEAJTZLADmbYAA3lFsASalyACMyRgAvRmAAZL6RACt6SgBfuowAHCwuAE9SVgAylVkAJzpRAB9gOQAXPSgAK0BZAEOmawBYuIIAFjQpACY4TwAiTDgAQaRpAEancQAhMEUA////ADNKZwAxRmIAVrOBACQsOAA9nWUAXLaJADNAUgA0PkcASaRyABomOQAfLT4AOZxgACEzRgAcKTkAHlg5AEqtcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT09PT09PT04sT09PT09PT09PT09PFko8LAoZT09PT09PT09WN1AWUQUvBQ8sT09PTysEN0NDGkEhWlwvLC8GT08SK1FXAS5dGQYPUywGWk9PDiVKFlErFDYWJDY7MlNPTzwrF0YuJx8vWgYsWjcQT08WNStZGCcTQAhaIC0vMk9PHxsXSwNLMzBLIDQeNi9PTysaDF4HPjo/M0lFSw8gT09TJksjSFU5OVRbJktJSU9PAh0/KhEJOUcJC0dMRChPT01VHFJHDSIJCUI6ADEVT09PT184PQkAUgApUglPT09PT09PTwkxEQBYW09PT09PT09PT09PTwspT09PT09PT/5/AAD4HwAA4AcAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAADgBwAA+B8AAP5/AAA="
+        rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+</head>
+
+<body>
+    <div class="col-sm">
+        <a href="./index.html" style="position: fixed;
+        z-index: 1000;     bottom: 0;"><button type="button" class="btn btn-primary">Назад</button></a>
+        <br>
+        <div>
+            <h3 style="padding: 0.5rem 1rem;">Оружие и броня</h3>
+            <p style="padding: 0 1rem;">Чтобы скопировать комманду, дважды нажмите на понравившуюся</p>
+        </div>
+        <br>
+        <ol class="list-group list-group-numbered">
+            <li onclick="Copy(1)" id='#1' data-clipboard-text="!turtle_helmet" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!turtle_helmet</div>
+                    Черепаший панцирь
+                </div>
+            </li>
+            <li onclick="Copy(2)" id='#2' data-clipboard-text="!bow" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!bow</div>
+                    Лук
+                </div>
+            </li>
+            <li onclick="Copy(3)" id='#3' data-clipboard-text="!arrow" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!arrow</div>
+                    Стрела
+                </div>
+            </li>
+            <li onclick="Copy(4)" id='#4' data-clipboard-text="!wooden_sword" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!wooden_sword</div>
+                    Деревянный меч
+                </div>
+            </li>
+            <li onclick="Copy(5)" id='#5' data-clipboard-text="!stone_sword" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!stone_sword</div>
+                    Каменный меч
+                </div>
+            </li>
+            <li onclick="Copy(6)" id='#6' data-clipboard-text="!golden_sword" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!golden_sword</div>
+                    Золотой меч
+                </div>
+            </li>
+            <li onclick="Copy(7)" id='#7' data-clipboard-text="!iron_sword" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!iron_sword</div>
+                    Железный меч
+                </div>
+            </li>
+            <li onclick="Copy(8)" id='#8' data-clipboard-text="!diamond_sword" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!diamond_sword</div>
+                    Алмазный меч
+                </div>
+            </li>
+            <li onclick="Copy(9)" id='#9' data-clipboard-text="!netherite_sword" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!netherite_sword</div>
+                    Незеритовый меч
+                </div>
+            </li>
+            <li onclick="Copy(10)" id='#10' data-clipboard-text="!leather_helmet" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!leather_helmet</div>
+                    Кожаный шлем
+                </div>
+            </li>
+            <li onclick="Copy(11)" id='#11' data-clipboard-text="!leather_chestplate" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!leather_chestplate</div>
+                    Кожаная куртка
+                </div>
+            </li>
+            <li onclick="Copy(12)" id='#12' data-clipboard-text="!leather_leggings" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!leather_leggings</div>
+                    Кожаные штаны
+                </div>
+            </li>
+            <li onclick="Copy(13)" id='#13' data-clipboard-text="!leather_boots" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!leather_boots</div>
+                    Кожаные ботинки
+                </div>
+            </li>
+            <li onclick="Copy(14)" id='#14' data-clipboard-text="!chainmail_helmet" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!chainmail_helmet</div>
+                    Койф
+                </div>
+            </li>
+            <li onclick="Copy(15)" id='#15' data-clipboard-text="!chainmail_chestplate" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!chainmail_chestplate</div>
+                    Кольчуга
+                </div>
+            </li>
+            <li onclick="Copy(16)" id='#16' data-clipboard-text="!chainmail_leggings" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!chainmail_leggings</div>
+                    Кольчужные поножи
+                </div>
+            </li>
+            <li onclick="Copy(17)" id='#17' data-clipboard-text="!chainmail_boots" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!chainmail_boots</div>
+                    Кольчужные ботинки
+                </div>
+            </li>
+            <li onclick="Copy(18)" id='#18' data-clipboard-text="!iron_helmet" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!iron_helmet</div>
+                    Железный шлем
+                </div>
+            </li>
+            <li onclick="Copy(19)" id='#19' data-clipboard-text="!iron_chestplate" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!iron_chestplate</div>
+                    Железный нагрудник
+                </div>
+            </li>
+            <li onclick="Copy(20)" id='#20' data-clipboard-text="!iron_leggings" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!iron_leggings</div>
+                    Железные поножи
+                </div>
+            </li>
+            <li onclick="Copy(21)" id='#21' data-clipboard-text="!iron_boots" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!iron_boots</div>
+                    Железные ботинки
+                </div>
+            </li>
+            <li onclick="Copy(22)" id='#22' data-clipboard-text="!diamond_helmet" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!diamond_helmet</div>
+                    Алмазный шлем
+                </div>
+            </li>
+            <li onclick="Copy(23)" id='#23' data-clipboard-text="!diamond_chestplate" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!diamond_chestplate</div>
+                    Алмазный нагрудник
+                </div>
+            </li>
+            <li onclick="Copy(24)" id='#24' data-clipboard-text="!diamond_leggings" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!diamond_leggings</div>
+                    Алмазные поножи
+                </div>
+            </li>
+            <li onclick="Copy(25)" id='#25' data-clipboard-text="!diamond_boots" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!diamond_boots</div>
+                    Алмазные ботинки
+                </div>
+            </li>
+            <li onclick="Copy(26)" id='#26' data-clipboard-text="!golden_helmet" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!golden_helmet</div>
+                    Золотой шлем
+                </div>
+            </li>
+            <li onclick="Copy(27)" id='#27' data-clipboard-text="!golden_chestplate" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!golden_chestplate</div>
+                    Золотой нагрудник
+                </div>
+            </li>
+            <li onclick="Copy(28)" id='#28' data-clipboard-text="!golden_leggings" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!golden_leggings</div>
+                    Золотые поножи
+                </div>
+            </li>
+            <li onclick="Copy(29)" id='#29' data-clipboard-text="!golden_boots" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!golden_boots</div>
+                    Золотые ботинки
+                </div>
+            </li>
+            <li onclick="Copy(30)" id='#30' data-clipboard-text="!netherite_helmet" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!netherite_helmet</div>
+                    Незеритовый шлем
+                </div>
+            </li>
+            <li onclick="Copy(31)" id='#31' data-clipboard-text="!netherite_chestplate" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!netherite_chestplate</div>
+                    Незеритовый нагрудник
+                </div>
+            </li>
+            <li onclick="Copy(32)" id='#32' data-clipboard-text="!netherite_leggings" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!netherite_leggings</div>
+                    Незеритовые поножи
+                </div>
+            </li>
+            <li onclick="Copy(33)" id='#33' data-clipboard-text="!netherite_boots" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!netherite_boots</div>
+                    Незеритовые ботинки
+                </div>
+            </li>
+            <li onclick="Copy(34)" id='#34' data-clipboard-text="!spectral_arrow" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!spectral_arrow</div>
+                    Спектральная стрела
+                </div>
+            </li>
+            <li onclick="Copy(35)" id='#35' data-clipboard-text="!shield" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!shield</div>
+                    Щит
+                </div>
+            </li>
+            <li onclick="Copy(36)" id='#36' data-clipboard-text="!totem_of_undying" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!totem_of_undying</div>
+                    Тотем бессмертия
+                </div>
+            </li>
+            <li onclick="Copy(37)" id='#37' data-clipboard-text="!trident" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!trident</div>
+                    Трезубец
+                </div>
+            </li>
+            <li onclick="Copy(38)" id='#38' data-clipboard-text="!crossbow" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!crossbow</div>
+                    Арбалет
+                </div>
+            </li>
+            
+        </ol>
+        <br>
+    </div>
+
+    <script>
+        function Copy(number) {
+            /* Get the text field */
+            var element = document.getElementById(`#${number}`)
+
+            var clipboard = new ClipboardJS(element);
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Custom Command</title>
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAA2ml4ANUxrAC5wSAA6dlgAN05uABYfLQAXITAAM3ROABQdKwA9oWQAIjFFAESnbAAeODoAUKp8ACAvQwAXIi4AMTM3AEKebQArP1gAIUE6ACg7UwA0mVsAJTdOACxBWwAYIjcAGSU3ACAvRAAtQ14ALpBUACdtQwAQFyUAHSs/ABEaJQAfLj8AVK+AADyFWgAfLUIANEtpAC1rSQAhM0oAFUAmAEaqbgA4m18AIzVNABsoOAAiMkUAOlN0ABgkMwAdSS4AO6BiABMcKQAjZz0AEyMmADlRcgAYIjEAJTZLADmbYAA3lFsASalyACMyRgAvRmAAZL6RACt6SgBfuowAHCwuAE9SVgAylVkAJzpRAB9gOQAXPSgAK0BZAEOmawBYuIIAFjQpACY4TwAiTDgAQaRpAEancQAhMEUA////ADNKZwAxRmIAVrOBACQsOAA9nWUAXLaJADNAUgA0PkcASaRyABomOQAfLT4AOZxgACEzRgAcKTkAHlg5AEqtcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT09PT09PT04sT09PT09PT09PT09PFko8LAoZT09PT09PT09WN1AWUQUvBQ8sT09PTysEN0NDGkEhWlwvLC8GT08SK1FXAS5dGQYPUywGWk9PDiVKFlErFDYWJDY7MlNPTzwrF0YuJx8vWgYsWjcQT08WNStZGCcTQAhaIC0vMk9PHxsXSwNLMzBLIDQeNi9PTysaDF4HPjo/M0lFSw8gT09TJksjSFU5OVRbJktJSU9PAh0/KhEJOUcJC0dMRChPT01VHFJHDSIJCUI6ADEVT09PT184PQkAUgApUglPT09PT09PTwkxEQBYW09PT09PT09PT09PTwspT09PT09PT/5/AAD4HwAA4AcAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAADgBwAA+B8AAP5/AAA="
+        rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+</head>
+
+<body>
+    <div class="col-sm">
+        <a href="./index.html" style="position: fixed;
+        z-index: 1000;     bottom: 0;"><button type="button" class="btn btn-primary">Назад</button></a>
+        <br>
+        <div>
+            <h3 style="padding: 0.5rem 1rem;">Кастомные комманды</h3>
+            <p style="padding: 0 1rem;">Чтобы скопировать комманду, просто нажмите на понравившуюся</p>
+        </div>
+        <br>
+        <ol class="list-group list-group-numbered">
+            <li onclick="Copy(1)" id='#1' data-clipboard-text="!afall" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!afall</div>
+                    наковальня на голову
+                </div>
+            </li>
+            <li onclick="Copy(2)" id='#2' data-clipboard-text="!killMobs" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!killMobs</div>
+                    убить мобов в округе
+                </div>
+            </li>
+            <li onclick="Copy(3)" id='#3' data-clipboard-text="!tDay / !tMid / !tNight !tNoon" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!tDay / !tMid / !tNight !tNoon</div>
+                    время суток
+                </div>
+            </li>
+            <li onclick="Copy(4)" id='#4' data-clipboard-text="!tpUP" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!tpUP</div>
+                    подбросить на 5 блоков вверх
+                </div>
+            </li>
+            <li onclick="Copy(5)" id='#5' data-clipboard-text="!tpDOWN" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!tpDOWN</div>
+                    опустить на один блок вниз
+                </div>
+            </li>
+            <li onclick="Copy(6)" id='#6' data-clipboard-text="!sp" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold custom">!sp</div>
+                    установить spawnpoint
+                </div>
+            </li>
+        </ol>
+        <br>
+    </div>
+
+    <script>
+        function Copy(number) {
+            /* Get the text field */
+            var element = document.getElementById(`#${number}`)
+
+            var clipboard = new ClipboardJS(element);
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

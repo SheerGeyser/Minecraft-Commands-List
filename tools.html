@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Tools</title>
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAA2ml4ANUxrAC5wSAA6dlgAN05uABYfLQAXITAAM3ROABQdKwA9oWQAIjFFAESnbAAeODoAUKp8ACAvQwAXIi4AMTM3AEKebQArP1gAIUE6ACg7UwA0mVsAJTdOACxBWwAYIjcAGSU3ACAvRAAtQ14ALpBUACdtQwAQFyUAHSs/ABEaJQAfLj8AVK+AADyFWgAfLUIANEtpAC1rSQAhM0oAFUAmAEaqbgA4m18AIzVNABsoOAAiMkUAOlN0ABgkMwAdSS4AO6BiABMcKQAjZz0AEyMmADlRcgAYIjEAJTZLADmbYAA3lFsASalyACMyRgAvRmAAZL6RACt6SgBfuowAHCwuAE9SVgAylVkAJzpRAB9gOQAXPSgAK0BZAEOmawBYuIIAFjQpACY4TwAiTDgAQaRpAEancQAhMEUA////ADNKZwAxRmIAVrOBACQsOAA9nWUAXLaJADNAUgA0PkcASaRyABomOQAfLT4AOZxgACEzRgAcKTkAHlg5AEqtcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT09PT09PT04sT09PT09PT09PT09PFko8LAoZT09PT09PT09WN1AWUQUvBQ8sT09PTysEN0NDGkEhWlwvLC8GT08SK1FXAS5dGQYPUywGWk9PDiVKFlErFDYWJDY7MlNPTzwrF0YuJx8vWgYsWjcQT08WNStZGCcTQAhaIC0vMk9PHxsXSwNLMzBLIDQeNi9PTysaDF4HPjo/M0lFSw8gT09TJksjSFU5OVRbJktJSU9PAh0/KhEJOUcJC0dMRChPT01VHFJHDSIJCUI6ADEVT09PT184PQkAUgApUglPT09PT09PTwkxEQBYW09PT09PT09PT09PTwspT09PT09PT/5/AAD4HwAA4AcAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAADgBwAA+B8AAP5/AAA="
+        rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+</head>
+
+<body>
+    <div class="col-sm">
+        <a href="./index.html" style="position: fixed;
+        z-index: 1000;     bottom: 0;"><button type="button" class="btn btn-primary">Назад</button></a>
+        <br>
+        <div>
+            <h3 style="padding: 0 1rem;">Комманды для инструментов</h3>
+            <p style="padding: 0 1rem;">Чтобы скопировать комманду, дважды нажмите на понравившуюся</p>
+        </div>
+        <br>
+        <ol class="list-group list-group-numbered">
+            <li onclick="toolsFunc(1)" id='#1' data-clipboard-text="!flint_and_steel" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!flint_and_steel</div>
+                 Огниво
+                </div>
+            </li>
+            <li onclick="toolsFunc(2)" id='#2' data-clipboard-text="!wooden_shovel" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!wooden_shovel</div>
+                 Деревянная лопата
+                </div>
+            </li>
+            <li onclick="toolsFunc(3)" id='#3' data-clipboard-text="!wooden_pickaxe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!wooden_pickaxe</div>
+                 Деревянная кирка
+                </div>
+            </li>
+            <li onclick="toolsFunc(4)" id='#4' data-clipboard-text="!wooden_axe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!wooden_axe</div>
+                 Деревянный топор
+                </div>
+            </li>
+            <li onclick="toolsFunc(5)" id='#5' data-clipboard-text="!wooden_hoe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!wooden_hoe</div>
+                 Деревянная мотыга
+                </div>
+            </li>
+            <li onclick="toolsFunc(6)" id='#6' data-clipboard-text="!stone_shovel" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!stone_shovel</div>
+                     Каменная лопата
+                </div>
+            </li>
+            <li onclick="toolsFunc(7)" id='#7' data-clipboard-text="!stone_pickaxe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!stone_pickaxe</div>
+                 Каменная кирка
+                </div>
+            </li>
+            <li onclick="toolsFunc(8)" id='#8' data-clipboard-text="!stone_axe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!stone_axe</div>
+                 Каменный топор
+                </div>
+            </li>
+            <li onclick="toolsFunc(9)" id='#9' data-clipboard-text="!stone_hoe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!stone_hoe</div>
+                 Каменная мотыга
+                </div>
+            </li>
+            <li onclick="toolsFunc(10)" id='#10' data-clipboard-text="!golden_shovel" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!golden_shovel</div>
+                 Золотая лопата
+                </div>
+            </li>
+            <li onclick="toolsFunc(11)" id='#11' data-clipboard-text="!golden_pickaxe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!golden_pickaxe</div>
+                     Золотая кирка
+                </div>
+            </li>
+            <li onclick="toolsFunc(12)" id='#12' data-clipboard-text="!golden_axe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!golden_axe</div>
+                 Золотой топор
+                </div>
+            </li>
+            <li onclick="toolsFunc(13)" id='#13' data-clipboard-text="!golden_hoe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!golden_hoe</div>
+                 Золотая мотыга
+                </div>
+            </li>
+            <li onclick="toolsFunc(14)" id='#14' data-clipboard-text="!iron_shovel" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!iron_shovel</div>
+                     Железная лопата
+                </div>
+            </li>
+            <li onclick="toolsFunc(15)" id='#15' data-clipboard-text="!iron_pickaxe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!iron_pickaxe</div>
+                 Железная кирка
+                </div>
+            </li>
+            <li onclick="toolsFunc(16)" id='#16' data-clipboard-text="!iron_axe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!iron_axe</div>
+                 Железный топор
+                </div>
+            </li>
+            <li onclick="toolsFunc(17)" id='#17' data-clipboard-text="!iron_hoe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!iron_hoe</div>
+                 Железная мотыга
+                </div>
+            </li>
+            <li onclick="toolsFunc(18)" id='#18' data-clipboard-text="!diamond_shovel" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!diamond_shovel</div>
+                    Алмазная лопата
+                </div>
+            </li>
+            <li onclick="toolsFunc(19)" id='#19' data-clipboard-text="!diamond_pickaxe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!diamond_pickaxe</div>
+                     Алмазная кирка
+                </div>
+            </li>
+            <li onclick="toolsFunc(20)" id='#20' data-clipboard-text="!diamond_axe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!diamond_axe</div>
+                 Алмазный топор
+                </div>
+            </li>
+            <li onclick="toolsFunc(21)" id='#21' data-clipboard-text="!diamond_hoe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!diamond_hoe</div>
+                     Алмазная мотыга
+                </div>
+            </li>
+            <li onclick="toolsFunc(22)" id='#22' data-clipboard-text="!netherite_shovel" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!netherite_shovel</div>
+                 Незеритовая лопата
+                </div>
+            </li>
+            <li onclick="toolsFunc(23)" id='#23' data-clipboard-text="!netherite_pickaxe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!netherite_pickaxe</div>
+                 Незеритовая кирка
+                </div>
+            </li>
+            <li onclick="toolsFunc(24)" id='#24' data-clipboard-text="!netherite_axe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!netherite_axe</div>
+                 Незеритовый топор
+                </div>
+            </li>
+            <li onclick="toolsFunc(25)" id='#25' data-clipboard-text="!netherite_hoe" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!netherite_hoe</div>
+                 Незеритовая мотыга
+                </div>
+            </li>
+            <li onclick="toolsFunc(26)" id='#26' data-clipboard-text="!compass" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!compass</div>
+                     Компас
+                </div>
+            </li>
+            <li onclick="toolsFunc(27)" id='#27' data-clipboard-text="!fishing_rod" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!fishing_rod</div>
+                 Удочка
+                </div>
+            </li>
+            <li onclick="toolsFunc(28)" id='#28' data-clipboard-text="!clock" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!clock</div>
+                 Часы
+                </div>
+            </li>
+            <li onclick="toolsFunc(29)" id='#29' data-clipboard-text="!spyglass" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!spyglass</div>
+                 Подзорная труба
+                </div>
+            </li>
+            <li onclick="toolsFunc(30)" id='#30' data-clipboard-text="!shears" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!shears</div>
+                     Ножницы
+                </div>
+            </li>
+            <li onclick="toolsFunc(31)" id='#31' data-clipboard-text="!lead" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!lead</div>
+                 Поводок
+                </div>
+            </li>
+            <li onclick="toolsFunc(32)" id='#32' data-clipboard-text="!name_tag" class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold tools">!name_tag</div>
+                 Бирка
+                </div>
+            </li>
+        </ol>
+        <br>
+    </div>
+
+    <script>
+        function toolsFunc(number) {
+            /* Get the text field */
+            var toolsArr = document.getElementsByClassName("tools")
+
+            // /* Select the text field */
+            // arr[number].select();
+            // arr[number].setSelectionRange(0, 99999); /* For mobile devices */
+
+            /* Copy the text inside the text field */
+            navigator.clipboard.writeText(toolsArr[number - 1].innerText);
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
